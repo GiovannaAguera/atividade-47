@@ -1,0 +1,16 @@
+Portugol
+programa {
+ inclua biblioteca Texto --> tx
+ funcao inicio() {
+   cadeia s, prt
+   inteiro nl
+   escreva("Digite uma palavra de pelo menos 5 números: ")
+   leia(s)
+
+   nl = tx.numero_caracteres(s)
+
+   prt = tx.extrair_subtexto(s,nl-3,nl)
+
+   escreva(prt)
+ }
+}
