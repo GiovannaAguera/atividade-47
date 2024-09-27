@@ -1,0 +1,20 @@
+VisualG
+Algoritmo "Ex.11"
+
+Var
+pal, l : caracter
+i, num : inteiro
+
+Inicio
+      escreval("Digite uma palavra de 4 a 15 caracteres:")
+      leia(pal)
+      se (compr(pal) > 4) e (compr(pal) < 15) entao
+         para i de 1 ate compr(pal) faca
+              l := copia(pal,i,1)
+              num := asc(l)
+              escreval(num)
+         fimpara
+      senao escreval("Sua palavra não atende os requisitos de comprimento")
+      fimse
+      
+Fimalgoritmo
