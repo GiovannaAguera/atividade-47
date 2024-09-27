@@ -1,0 +1,23 @@
+Algoritmo "ex.10"
+
+Var
+l, pal, pal1 : caractere
+i : inteiro
+
+Inicio
+      escreval("Digite uma palavra: ")
+      leia(pal)
+      para i de 1 ate compr(pal) faca
+           se i%2 = 0 entao
+              l := copia(pal,i,1)
+              l := minusc(l)
+              pal1 := pal1+l
+           senao
+           l := copia(pal,i,1)
+           l := maiusc(l)
+           pal1 := pal1 + l
+           fimse
+      fimpara
+      escreval("Sua palavra é: ",pal1)
+
+Fimalgoritmo
