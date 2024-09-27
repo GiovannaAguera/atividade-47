@@ -1,0 +1,16 @@
+Portugol
+programa {
+ inclua biblioteca Texto --> tx
+ funcao inicio() {
+   cadeia s
+   inteiro nl, letra
+   escreva("Digite uma palavra: ")
+   leia(s)
+
+   nl = tx.numero_caracteres(s)
+   
+   para(inteiro i = 0; i<= nl; i++)
+   l = t.extrair_subtexto(s,i)
+   escreva(l"\n")
+
+}
