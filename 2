@@ -1,0 +1,13 @@
+Portugol
+programa {
+ inclua biblioteca Texto --> t
+ funcao inicio() {
+   cadeia s, parte
+   escreva("Escreva uma palavra: ")
+   leia(s)
+
+   parte = t.extrair_subtexto(s,0,4)
+
+   escreva(parte)
+ }
+}
