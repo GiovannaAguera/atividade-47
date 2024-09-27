@@ -1,0 +1,16 @@
+Algoritmo "ex.9"
+
+Var
+l, inv, pal : caractere
+i : inteiro
+
+Inicio
+      escreval("Digite uma palavra para ser apresentada ao contrário")
+      leia(pal)
+      para i de 1 ate compr(pal) faca
+           l := copia(pal,i,1)
+           inv := l + inv
+      fimpara
+      escreval("A palavra ",pal," ao contrário é: ",inv,"!")
+
+Fimalgoritmo
