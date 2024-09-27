@@ -1,0 +1,22 @@
+Algoritmo "Ex.12"
+
+Var
+pal, l, result, fim : caractere
+i, num : inteiro
+
+Inicio
+      escreval("Digite uma palavra que tenha de 3 a 20 caracteres: ")
+      leia(pal)
+      se (compr(pal) > 3) e (compr(pal) < 20) entao
+         para i de 1 ate compr(pal) faca
+              l := copia(pal,i,1)
+              num := asc(l)
+              num := num+10
+              result := carac(num)
+              fim := fim + result
+         fimpara
+         escreval(fim)
+      senao escreval("Sua palavra não está entre 3 e 20 caracteres")
+      fimse
+Fimalgoritmo
+
